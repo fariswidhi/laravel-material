@@ -1,3 +1,21 @@
+
+koperasinya namanya = VOHISMA
+
+menunya :
+-dashboard
+-layanan
+-simpan
+-pinjam
+-master data
+-jenis simpan
+-jenis pinjam
+-anggota
+-laporan
+-bulanan
+-logout
+
+
+
 Jenis Simpan
 ada 3 buah jenis simpanan
 1. Simpanan Wajib
