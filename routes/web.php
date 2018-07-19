@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('template/table');
 });
+
+Route::get('/crud/data', 'CrudController@data');
+    //
+Route::resource('/crud', 'CrudController');
