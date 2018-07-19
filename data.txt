@@ -1,0 +1,31 @@
+Jenis Simpan
+ada 3 buah jenis simpanan
+1. Simpanan Wajib
+2. Simpanan Pokok
+3. Simpanan Manasuka
+
+jadi nanti dikasih table ada 2 saja
+No | Jenis Simpanan
+
+
+saat memilih layanan simpan
+
+maka akan muncul table
+Tanggal | Nama Anggota | Jumlah | Kode |
+
+
+Kode : maksudnya kode jenis simpan
+form untuk nambah layanan simpan 
+
+Tanggal :
+Jam :
+Pegawai :
+Sumber Dana: (Gaji / Luar Gaji)
+Jenis Simpan : (Wajib, Pokok, Manasuka)
+Bulan : (Jan - Des) Tahun (2018) 
+Jumlah :
+Keterangan :
+
+kemudian simpan
+
+khusus untuk jenis simpanan wajib, maka bulan akan hilang karena 1 anggota hanya diperbolehkan melakukan simpanan wajib 1x
