@@ -25,7 +25,7 @@ class CrudController extends Controller
    $crud = Crud::orderBy('id','desc')->get();
             return Datatables::of($crud)->addColumn('action',function($data){
                 $html ='';
-                $html .= '<button  data-source='.url('crud/'.$data->id.'/edit').' class="btn btn-success btn-sm btn-modal" data-title="Edit Data" data-toggle="modal" data-target="#modal" data-button="Ubah"><i class="material-icons">edit</i></button> ';
+                $html .= '<button  data-source='.url('crud/'.$data->id.'/edit').' class="btn btn-success btn-sm btn-modal" data-title="Edit Data" data-toggle="modal" data-target="#modal" data-button="Update"><i class="material-icons">edit</i></button> ';
 
                 // $html .= csrf_field();
                 // $html .= method_field("DELETE");
@@ -61,10 +61,10 @@ class CrudController extends Controller
         // print_r($request->all());
         $text = $request->text;
 
-        // validasi
+        // validation
         if (empty($text)) {
-            $title = "Gagal";
-            $message = 'Gagal Menyimpan Data,Data Harus Diisi';
+            $title = "Failed";
+            $message = 'Data is Empty';
             $type = 'danger';
 
         }
@@ -74,14 +74,14 @@ class CrudController extends Controller
         $save = $crud->save();
 
         if ($save) {
-            $title = "Sukses";
-            $message = 'Berhasil Menyimpan Data';
+            $title = "Success";
+            $message = 'Saved Data Successfully';
             $type = 'success';
 
         }
         else{
-            $title = "Gagal";
-            $message = 'Gagal Menyimpan Data';
+            $title = "Failed";
+            $message = 'Failed to Save Data';
             $type = 'danger';
 
         }
@@ -137,8 +137,8 @@ class CrudController extends Controller
 
         // validasi
         if (empty($text)) {
-            $title = "Gagal";
-            $message = 'Gagal Menyimpan Data,Data Harus Diisi';
+            $title = "Failed";
+            $message = 'Data is Empty';
             $type = 'danger';
 
         }
@@ -148,14 +148,14 @@ class CrudController extends Controller
         $save = $crud->save();
 
         if ($save) {
-            $title = "Sukses";
-            $message = 'Berhasil Mengubah Data';
+            $title = "Success";
+            $message = 'Data Updated Successfully';
             $type = 'success';
 
         }
         else{
-            $title = "Gagal";
-            $message = 'Gagal Mengubah Data';
+            $title = "Failed";
+            $message = 'Failed to Update Data';
             $type = 'danger';
 
         }
@@ -189,14 +189,14 @@ class CrudController extends Controller
         $delete = $crud->delete();
 
         if ($delete) {
-            $title = "Sukses";
-            $message = 'Berhasil Menghapus Data';
+            $title = "Success";
+            $message = 'Deleted Data Successfully';
             $type = 'success';
 
         }
                 else{
-            $title = "Gagal";
-            $message = 'Gagal Menghapus Data';
+            $title = "Failed";
+            $message = 'Failed to Delete Data';
             $type = 'danger';
 
         }
@@ -205,8 +205,8 @@ class CrudController extends Controller
 
         }
         else{
-            $title = "Gagal";
-            $message = 'Gagal Menghapus Data';
+            $title = "Failed";
+            $message = 'Failed to Delete Data';
             $type = 'danger';
 
         }

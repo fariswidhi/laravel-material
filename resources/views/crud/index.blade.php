@@ -4,8 +4,8 @@
 <div class="container-fluid">
           <div class="row">
             <div class="col-md-12">
-<button type="button" class="btn btn-primary btn-modal" data-source="{{ url('/crud/create') }}" data-toggle="modal" data-target="#modal" data-title="Tambah Data" data-button="Simpan">
-  Tambah Data
+<button type="button" class="btn btn-primary btn-modal" data-source="{{ url('/crud/create') }}" data-toggle="modal" data-target="#modal" data-title="Create Data" data-button="Save">
+  Create Data
 </button>
 
 
@@ -22,7 +22,7 @@
   
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" id="btn-save"></button>
       </div>
     </div>
@@ -30,7 +30,7 @@
 </div>
               <div class="card">
                 <div class="card-header card-header-primary">
-                  <h4 class="card-title ">Data Crud</h4>
+                  <h4 class="card-title ">CRUD DATA</h4>
 {{--                   <p class="card-category"> Here is a subtitle for this table</p> --}}
                 </div>
                 <div class="card-body">
