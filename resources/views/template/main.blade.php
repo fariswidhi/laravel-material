@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Aplikasi Koperasi Vohisma
+  Material Dashboard Starter Template x Laravel
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -32,7 +32,7 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Vohisma
+          CRUD
         </a>
       </div>
       <div class="sidebar-wrapper">
@@ -43,54 +43,29 @@
               <p>Dashboard</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ url('/crud') }}">
+              <i class="material-icons">dashboard</i>
+              <p>CRUD</p>
+            </a>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">work</i>
-                  <p>Layanan</p>
-
-                </a>
-                <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Simpan</a>
-                  <a class="dropdown-item" href="#">Pinjam</a>
-
-                </div>
-                </li>
+            
 
 
               <li class="nav-item dropdown">
                 <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">dns</i>
-                  <p>Master Data</p>
+                  <p>Dropdown</p>
 
                 </a>
                 <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Jenis Simpan</a>
-                  <a class="dropdown-item" href="#">Jenis Pinjam</a>
+                  <a class="dropdown-item" href="#">Dropdown 1</a>
+                  <a class="dropdown-item" href="#">Dropdown 2</a>
 
                 </div>
                 </li>
 
-          <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
-              <i class="material-icons">person</i>
-              <p>Anggota</p>
-            </a>
-          </li>
-
-
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="material-icons">table_chart</i>
-                  <p>Laporan</p>
-
-                </a>
-                <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Bulanan</a>
-
-
-                </div>
-                </li>
 
         </ul>
       </div>
